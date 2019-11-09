@@ -1,0 +1,230 @@
+.header{
+    text-align: center;
+    padding: 110px 0 0 0;
+    color: $c-grey;
+    font-size: 18px;
+    &_title{
+    font: 900 60px $ff-roboto;
+    line-height: 66px;
+    color: $c-yellow;
+    }
+  }
+
+.border{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+    .line{
+        width: 100%;
+        max-width: 450px;
+        height: 1px;
+        background: $c-yellow;
+        @include centerer-xy
+    }
+
+   & .fa-gripfire{
+        font-size: 19px;
+        z-index: 10;
+        background: $c-white;
+        text-align: center;
+        width: 30px;
+        &:before{
+            color: $c-yellow;
+        }
+    }
+}
+.main{
+    display: block;
+
+    &_inner{
+        display: flex;
+        justify-content: space-between;
+        height: 560px;
+    }
+    
+    &_description{
+        display: block;
+        width: 50%;
+        position: relative;
+        text-align: center;
+        
+        &_name{
+            font: 900 24px/1 $ff-roboto;
+            color: $c-grey;
+            line-height: 24px;
+            
+            
+            & .name_border{
+                width: 100px;
+                height: 1px;
+                background: $c-yellow;
+                text-align: center;
+                margin: 35px auto 0;
+            }
+        }
+
+        &_position{
+            font: 400 36px/1 $ff-raleway;
+            color: $c-grey;
+            line-height: 36px;
+            margin: 34px 0;
+        }
+
+        &_link{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 31px;
+            
+            & .circle{
+                width: 30px;
+                height: 30px;
+                border: 1px solid $c-grey;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 5px;
+                cursor: pointer;
+                transition: 0.4s;
+                &:hover{
+                    background: $c-yellow;
+                    border-color: $c-yellow;
+                    & .fa-facebook-f, .fa-twitter, .fa-google-plus-g, .fa-linkedin-in{
+                        &:before{
+                            color: $c-white;
+                        }
+                    }
+                }
+                &:last-of-type{
+                    margin-right: 0;
+                }
+
+                & .fa-facebook-f, .fa-twitter, .fa-google-plus-g, .fa-linkedin-in{
+                    font-size: 13px;
+                    &:before{
+                        color: $c-grey;
+                    }
+                }
+            }
+        }
+
+        &_text{
+            text-align: center;
+            font: 500 14px/1 $ff-raleway;
+            color: $c-grey;
+            line-height: 24px;
+            margin-bottom: 24px;
+            width: 100%;
+            max-width: 425px;
+            margin: 0 auto;
+
+        }
+        & .border_text{
+            width: 20px;
+            height: 4px;
+            background: $c-yellow;
+            display: block;
+            text-align: center;
+            margin: 24px auto ;
+            position: relative;
+            &:before{
+                content: "";
+                width: 10px;
+                height: 4px;
+                background: $c-yellow;
+                display: block;
+                @include centerer-xy;
+                left: -15px;
+            }
+            &:after{
+                content: "";
+                width: 10px;
+                height: 4px;
+                background: $c-yellow;
+                margin-left: 5px;
+                display: block;
+                @include centerer-xy;
+                left: unset;
+                right: -25px;
+            }
+        }
+        & .btn{
+            font: 700 14px/1 $ff-sans;
+            line-height: 24px;
+            text-transform: uppercase;
+            text-align: center;
+            color: $c-grey;
+            background: $c-white;
+            padding: 6px 11px;
+            border: 1px solid $c-yellow;  
+            margin: 0 auto;  
+            cursor: pointer;
+            transition: 0.6s;
+            &:hover{
+                background: $c-yellow;
+                color: $c-white;
+            }
+        }
+        & .fa-chevron-right{
+            @include centerer-xy;
+            left: 89%;
+            font-size: 22px;
+            cursor: pointer;
+
+            &:before
+{             color: $c-yellow;
+}        }
+    }
+
+    &_img{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        position: relative;
+        border-right: 1px solid $c-yellow;
+
+
+        &_data{
+    
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        & .fa-chevron-left{
+            @include centerer-xy;
+            left: 12%;
+            font-size: 22px;
+            cursor: pointer;
+            &:before{
+                color: $c-yellow;
+            }
+        }
+    }
+    & .dot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+        &_inner{
+            width: 12px;
+            height: 12px;
+            background: $c-yellow;
+            cursor: pointer;
+            margin-right: 9px;
+            border-radius: 50%;
+            &:last-child{
+                margin-right: 0;
+            }
+
+            &:nth-child(2){
+                background: $c-white;
+                border: 1px solid $c-yellow;
+            }
+        }
+    }
+}

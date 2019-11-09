@@ -1,0 +1,354 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 110px 0 0 0;
+  color: #919696;
+  font-size: 18px;
+}
+
+.header_title {
+  font: 900 60px "Roboto", sans-serif;
+  line-height: 66px;
+  color: #ffcc00;
+}
+
+.border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.border .line {
+  width: 100%;
+  max-width: 450px;
+  height: 1px;
+  background: #ffcc00;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.border .fa-gripfire {
+  font-size: 19px;
+  z-index: 10;
+  background: #fff;
+  text-align: center;
+  width: 30px;
+}
+
+.border .fa-gripfire:before {
+  color: #ffcc00;
+}
+
+.main {
+  display: block;
+}
+
+.main_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 560px;
+}
+
+.main_description {
+  display: block;
+  width: 50%;
+  position: relative;
+  text-align: center;
+}
+
+.main_description_name {
+  font: 900 24px/1 "Roboto", sans-serif;
+  color: #919696;
+  line-height: 24px;
+}
+
+.main_description_name .name_border {
+  width: 100px;
+  height: 1px;
+  background: #ffcc00;
+  text-align: center;
+  margin: 35px auto 0;
+}
+
+.main_description_position {
+  font: 400 36px/1 "Raleway", sans-serif;
+  color: #919696;
+  line-height: 36px;
+  margin: 34px 0;
+}
+
+.main_description_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 31px;
+}
+
+.main_description_link .circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #919696;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.main_description_link .circle:hover {
+  background: #ffcc00;
+  border-color: #ffcc00;
+}
+
+.main_description_link .circle:hover .fa-facebook-f:before, .main_description_link .circle:hover .fa-twitter:before, .main_description_link .circle:hover .fa-google-plus-g:before, .main_description_link .circle:hover .fa-linkedin-in:before {
+  color: #fff;
+}
+
+.main_description_link .circle:last-of-type {
+  margin-right: 0;
+}
+
+.main_description_link .circle .fa-facebook-f, .main_description_link .circle .fa-twitter, .main_description_link .circle .fa-google-plus-g, .main_description_link .circle .fa-linkedin-in {
+  font-size: 13px;
+}
+
+.main_description_link .circle .fa-facebook-f:before, .main_description_link .circle .fa-twitter:before, .main_description_link .circle .fa-google-plus-g:before, .main_description_link .circle .fa-linkedin-in:before {
+  color: #919696;
+}
+
+.main_description_text {
+  text-align: center;
+  font: 500 14px/1 "Raleway", sans-serif;
+  color: #919696;
+  line-height: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 425px;
+  margin: 0 auto;
+}
+
+.main_description .border_text {
+  width: 20px;
+  height: 4px;
+  background: #ffcc00;
+  display: block;
+  text-align: center;
+  margin: 24px auto;
+  position: relative;
+}
+
+.main_description .border_text:before {
+  content: "";
+  width: 10px;
+  height: 4px;
+  background: #ffcc00;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: -15px;
+}
+
+.main_description .border_text:after {
+  content: "";
+  width: 10px;
+  height: 4px;
+  background: #ffcc00;
+  margin-left: 5px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: unset;
+  right: -25px;
+}
+
+.main_description .btn {
+  font: 700 14px/1 "Open Sans", sans-serif;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #919696;
+  background: #fff;
+  padding: 6px 11px;
+  border: 1px solid #ffcc00;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.main_description .btn:hover {
+  background: #ffcc00;
+  color: #fff;
+}
+
+.main_description .fa-chevron-right {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 89%;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.main_description .fa-chevron-right:before {
+  color: #ffcc00;
+}
+
+.main_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+  border-right: 1px solid #ffcc00;
+}
+
+.main_img_data img {
+  width: 100%;
+  height: auto;
+}
+
+.main_img .fa-chevron-left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 12%;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.main_img .fa-chevron-left:before {
+  color: #ffcc00;
+}
+
+.main .dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.main .dot_inner {
+  width: 12px;
+  height: 12px;
+  background: #ffcc00;
+  cursor: pointer;
+  margin-right: 9px;
+  border-radius: 50%;
+}
+
+.main .dot_inner:last-child {
+  margin-right: 0;
+}
+
+.main .dot_inner:nth-child(2) {
+  background: #fff;
+  border: 1px solid #ffcc00;
+}
